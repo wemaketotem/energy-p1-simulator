@@ -5,7 +5,7 @@ import time
 import argparse
 
 from jinja2 import Environment, PackageLoader
-env = Environment(loader=PackageLoader('dsmrsim', 'templates'))
+env = Environment(loader=PackageLoader('dsmrsim', '../templates'))
 
 template = env.get_template('dsmr-2.2-2ME382')
 

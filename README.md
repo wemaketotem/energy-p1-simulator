@@ -1,1 +1,22 @@
 # Dutch Smart Meter Requirements P1 Simulator
+
+/ISk5\2MT382-1003\r\n\                                     Meter model ID
+\r\n\                                                      
+0-0:96.1.1(5A424244303035313330323736353132)\r\n\          Equipment ID
+1-0:1.8.1(00001.572*kWh)\r\n\                              Positive active energy (A+) in tariff T1 [kWh]
+1-0:1.8.2(00000.642*kWh)\r\n\                              Positive active energy (A+) in tariff T2 [kWh]
+1-0:2.8.1(00000.002*kWh)\r\n\                              Negative active energy (A+) in tariff T1 [kWh]
+1-0:2.8.2(00000.001*kWh)\r\n\                              Negative active energy (A+) in tariff T2 [kWh]
+0-0:96.14.0(0002)\r\n\                                     Tariff indicator electricity
+1-0:1.7.0(0000.03*kW)\r\n\                                 Positive active instantaneous power (A+) [kW]
+1-0:2.7.0(0000.08*kW)\r\n\                                 Negative active instantaneous power (A-) [kW]
+0-0:17.0.0(0999.00*kW)\r\n\                                Actual thresholdel electricity in kW
+0-0:96.3.10(0)\r\n\                                        Switch position electricity (in/out/enabled)
+0-0:96.13.1()\r\n\                                         Text message codes: numeric 8 digits
+0-0:96.13.0()\r\n\                                         Text message max 1024 chars
+0-1:24.1.0(3)\r\n\                                         M-bus client
+0-1:96.1.0(3238313031353431303036353936353132)\r\n\        Equipment ID
+0-1:24.3.0(130110110000)(00)(60)(1)(0-1:24.2.1)(m3)\r\n\   M-bus value: Time of measurement 2013-01-10 11:00:00
+(00001.456)\r\n\                                           1 m3 gas
+0-1:24.4.0(0)\r\n\                                         Valve position gas (on/off/released)
+!\r\n                                                      ???

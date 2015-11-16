@@ -4,10 +4,10 @@ import serial
 import time
 import argparse
 
-from jinja2 import Environment, PackageLoader
-env = Environment(loader=PackageLoader('dsmrsim', '../templates'))
+from jinja2 import Environment, FileSystemLoader
+env = Environment(loader=FileSystemLoader('templates/'))
 
-template = env.get_template('dsmr-2.2-2ME382')
+template = env.get_template('dsmr-2.2-2ME382.j2')
 
 def create_parser():
     parser = argparse.ArgumentParser(

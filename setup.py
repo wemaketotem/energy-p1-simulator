@@ -2,25 +2,24 @@
 
 import sys
 
-from dsmrsim import __name__, __version__, __author__
+from p1simulator import __name__, __version__, __author__
 try:
     from setuptools import setup, find_packages
 except ImportError:
-    print("DSMR simulator needs setuptools in order to build. Install it using"
+    print("P1 simulator needs setuptools in order to build. Install it using"
           " your package manager (usually python-setuptools) or via pip (pip"
           " install setuptools).")
     sys.exit(1)
 
 setup(name=__name__,
       version=__version__,
-      description='DSMR Simulator',
+      description='P1 Simulator',
       author=__author__,
       author_email='info@wemaketotem.org ',
       url='http://wemaketotem.org/',
       license='GPLv3',
       install_requires=['jinja2', 'setuptools'],
-      package_dir={'': 'dsmrsim'},
-      packages=['dsmrsim'],
+      packages=find_packages(),
       package_data={},
       classifiers=[
           'Development Status :: 5 - Production/Stable',
@@ -37,6 +36,8 @@ setup(name=__name__,
           'Topic :: System :: Systems Administration',
           'Topic :: Utilities',
       ],
-      scripts=[],
+      scripts=[
+          'bin/p1simulator'
+      ],
       data_files=[],
       )
